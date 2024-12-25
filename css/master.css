@@ -1,0 +1,141 @@
+.page .head {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    background-color: #139ae2;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 50%;
+    top: 30px;
+    z-index: 2;
+    overflow: hidden;
+}
+.page .head::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(131 67 143);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: -1;
+    left: 0px;
+    animation: val 3s linear infinite;
+    bottom: 63px;
+}
+
+@keyframes val {
+    0% {
+        width: 30px;
+        height: 30px;
+    }
+    50% {
+width: 100%;
+height: 100%;
+    } 
+    100% {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.page .head::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(131 67 143);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: -1;
+    right: 0;
+    animation: vals 3s linear infinite;
+    bottom: 60px;
+}
+@keyframes vals {
+    0% {
+        width: 30px;
+        height: 30px;
+    }
+    50% {
+width: 100%;
+height: 100%;
+    } 
+    100% {
+        width: 30px;
+        height: 30px;
+    }
+}
+.page .head .header{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.page .head h1{
+    font-size: 30px;
+}
+
+.page .heade {
+    background-image: url(../image/تنميه\ بشريه.jpg);
+    background-repeat: repeat;
+    position: relative;
+    height: 227px;
+    transition: 0.3s;
+}
+.page .heade::before {
+    content: '';
+    position: absolute;
+    background-color: #607d8b9e;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.page .heade:hover::before {
+  display: none;
+}
+.page .body {
+    direction: rtl;
+}
+.page .body .box{
+    background-color: #020101;
+    margin-bottom: 0;
+    border: solid 1px #2974d663;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+.page .body .box:hover {
+    background-color: #3b3939;
+
+}
+.page .body .box h2{
+    background-color: #4d99c0;
+    display: block;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 10px;
+    transition: 0,3s;
+}
+.page .body .box h2:hover {
+    color: white;
+}
+.page .body .box span{
+    padding: 4px;
+    font-size: 21px;
+    color: white;
+    transition: 0,3s;
+}
+.page .body .box h3{
+background-color: red;
+color: white;
+text-align: center;
+padding: 10px;
+}
+.page .body .box p{
+    color: snow;
+    text-align: center;
+}
